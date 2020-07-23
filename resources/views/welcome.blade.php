@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Welcome to Haposoft Laravel Development Team
+                    Welcome to Haposoft Laravel Development ♥
                 </div>
                 <div class="m-b-md">
                     Test auto deployment with Github Action
