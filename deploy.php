@@ -7,7 +7,7 @@ require 'recipe/laravel.php';
 set('application', 'Laravel Deployer Project');
 
 // Project repository
-set('repository', 'git@github.com:hapo-tuannd/laravel-base.git');
+set('repository', 'https://github.com/hapo-tuannd/laravel-base.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', false); 
@@ -21,9 +21,9 @@ add('writable_dirs', []);
 
 
 // Hosts
-host('xxx.xxx.xxx.xxx')
+host('103.107.182.61')
     ->user('deployer')
-    // ->identityFile('deployerkey')
+    ->identityFile('~/.ssh/deployerkey ')
     ->addSshOption('UserKnownHostsFile', '/dev/null')
     ->addSshOption('StrictHostKeyChecking', 'no')
     ->set('branch', 'develop')
